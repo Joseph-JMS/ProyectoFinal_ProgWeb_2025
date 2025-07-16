@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos - BabyShop</title>
+        <link href="estilos/style_global.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="estilos/section_productos.css"/>
+    </head>
+    <body>
+        <marquee>¡OFERTA RELÁMPAGO! Pañales Huggies 50% OFF + Envío gratis hoy - Solo por 24 horas</marquee>
+        <header class="header-main">
+            <div class="header-titulo-img">
+                <img src="img/logoBabyShop.png" alt="Logo BabyShop"/>
+                <h1>BabyShop</h1>
+                <a href="carrito.html" class="carrito-icono">
+                    <img class="img-carrito" src="img/carrito_compra.png" alt="Carrito de compras" />
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section-productos">
+            <h2>Todos nuestros productos</h2>
+
+            <div class="ordenamiento">
+                <label for="ordenar">Ordenar por:</label>
+                <select id="ordenar">
+                    <option value="nombre">Nombre</option>
+                    <option value="precio">Precio</option>
+                </select>
+
+                <label for="buscador-productos">Buscar:</label>
+                <input type="text" id="buscador-productos" placeholder="Buscar producto...">
+            </div>
+
+            <div class="lista-productos" id="contenedor-productos"></div>
+        </section>
+
+        <footer>
+            <div class="redes-sociales">
+                <a href="https:www.facebook.com"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" width="30"></a>
+                <a href="https:www.instagram.com"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30"></a>
+                <a href="https:www.twitter.com"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="30"></a>
+            </div>
+            <p>BabyShop &copy; 2023 - Tienda para bebés</p>
+            <p>Contacto: info@babyshop.com - Tel: 555-1234</p>
+        </footer>
+    </body>
+    <script src="javascript/js_navegacion.js"></script>
+    <script src="javascript/js_productos.js"></script>
+</html>

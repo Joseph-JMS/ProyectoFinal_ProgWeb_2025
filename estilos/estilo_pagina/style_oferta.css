@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 28 may. 2025, 00:29:35
+    Author     : Joseph
+*/
+
+.precio-oferta {
+    margin: 10px 0;
+}
+
+.precio-original {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9em;
+}
+.precio-actual {
+    font-weight: bold;
+    color: #ff69b4;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+.badge-oferta {
+    display: block;
+}
