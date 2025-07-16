@@ -1,0 +1,449 @@
+/* -----------------General -----------------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eefaff;
+    color: #333;
+    line-height: 1.6;
+    animation: mostrar-lento 1s ease-in;
+}
+@keyframes mostrar-lento {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/*-------------Banner promocion superior---------*/
+marquee {
+    background: #55CBCD;
+    color: black;
+    border-color: #FF6B6B;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    animation: flash 2s infinite;
+}
+@keyframes flash {
+    0%, 100% { background-color: #55CBCD; }
+    50% { background-color: #ffebf3; }
+}
+
+/*  -----------------  Header  -------------------- */          
+.header-main {
+    background-color: #ffb6c1;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    color: #fff;
+}
+/* Titulo y imagen*/
+.header-main h1 {
+    margin: 0;
+    color: #55CBCD;
+    font-size: 55px;
+}
+.header-main img {
+    margin: 0;
+    width: 100px;
+}
+.header-titulo-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*center*/
+    padding: 0 20px;
+    animation: traer-titulo 1s ease-out;
+}
+
+@keyframes traer-titulo {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Link al carrito html*/
+.carrito-icono img {
+    width: 40px;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease;
+}
+.carrito-icono img:hover {
+    transform: scale(1.1);
+    background-color: #ffd1dc;
+}
+
+/* Header - Area de barra de navegacion */
+.header-nav {
+    background-color: #ffd1dc;
+}
+.header-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 1px;
+}
+.header-nav li {
+    padding: 10px;
+}
+.header-nav a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px;
+    display: block;
+    transition: 0.1s ease-in;
+}
+.header-nav a:hover {
+    background-color: #ffb6c1;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 1000px;
+}
+
+.banner {
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 30px;
+}
+.banner a {
+    text-decoration: none;
+    color: white;
+}
+
+.precio {
+    color: #ff69b4;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #ff85a2;
+    transform: scale(1.05);
+}
+
+/* Newsletter */
+.formBlog {
+    background-color: #ffebf3;
+    text-align: center;
+    padding: 30px;
+}
+
+.formBlog input {
+    padding: 8px;
+    width: 250px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Estilos para ofertas */
+
+.oferta {
+    color: #ff0000;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/*  ----- Estilos para index contacto  ------ */
+.blog-preguntas {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.entrada-blog {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ff85a2;
+}
+
+.banner-promo {
+    margin: 20px auto;
+    max-width: 100%;
+    background-color: #ffb6c1;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 2px solid #ff69b4;
+}
+
+th {
+    background: #ffb6c1;
+    padding: 8px;
+}
+
+/* --- Tabla de produtos --- */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-spacing: 35px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+td:hover {
+    transform: translateY(-5px);
+}
+
+/*Imagenes en tablas*/
+table img {
+    width: 160px;
+    transition: transform 0.5s ease;
+}
+table img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+/*---------------------------------------------*/
+
+.carousel {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.slide {
+    width: 33.333%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+@keyframes slide {
+    0%, 28% {
+        transform: translateX(0);
+    }
+    33%, 61% {
+        transform: translateX(-33.333%);
+    }
+    66%, 94% {
+        transform: translateX(-66.666%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.carousel:hover .slides {
+    animation-play-state: paused;
+}
+
+.redes-sociales img {
+    transition: all 0.3s ease;
+}
+
+.redes-sociales img:hover {
+    transform: translateY(-5px) rotate(10deg);
+    filter: drop-shadow(0 5px 5px rgba(255, 105, 180, 0.5));
+}
+
+
+/* Estilos para la tabla de ofertas temporales */
+.ofertas-temporales {
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 0.9em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.styled-table thead tr {
+    background-color: #ffb6c1;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 15px 20px;
+}
+
+.descuento {
+    background-color: #ffebf3;
+    color: #ff69b4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-table {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-table:hover {
+    background-color: #ff85a2;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {  
+    .styled-table {
+        display: block;
+        overflow-x: auto;
+    }
+    .header-main img {
+        width: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+    .header-main h1 {
+        font-size: 35px;
+    }
+    .header-titulo-img {
+        flex-direction: column;
+    }    
+    .header-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 1rem;
+    }
+    .header-titulo-img .img-carrito {
+        display: inline-grid;
+        width: 25px;
+    }
+}
+
+#video-babyshop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+/* ----------- Menu con javascript ------------ */
+
+.header-main {
+    position: relative;
+    background: #ffb6c1;
+}
+
+.header-nav ul {
+    display: none; 
+    width: 100%;
+    background: #ffd1dc;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: block;
+    }
+    
+    .header-main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px 15px;
+    }
+    
+    .header-nav ul {
+        display: none;
+        width: 100%;
+        order: 3; 
+        background: #ffd1dc;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .header-nav ul.show {
+        display: flex;
+    }
+}
